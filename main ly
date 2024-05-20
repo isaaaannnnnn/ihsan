@@ -1,0 +1,19 @@
+import discord, os, keep_allive, asyincio, datetime, pytz
+
+
+from discord.ext import tasks, commands
+
+client = commands.Bot(
+command_prefix=':',
+self_bot=true
+)
+
+
+
+@client.event
+async def on_connect():
+await client.change_presence(activity = discord.streaming                                      (name = "24/7 online : 6AM - 10PM Online : late respond :                                      Puasa bor. : 7/30 hari lagi.", url =                                                           
+"https://www.twitch.tv/Danish8409"))
+
+keep_alive.keep_alive()
+client.run(os.getenv("TOKEN"), bot=false)
